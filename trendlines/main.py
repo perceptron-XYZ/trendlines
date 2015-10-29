@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-""" trendline command line tool
+""" trendlines command line tool
 
 Usage:
-    trendline [-n NUMBER] [-s CRITERIA] [-d DATE] KEYWORD
+    trendlines [-n NUMBER] [-s CRITERIA] [-d DATE] KEYWORD
 
 Options:
     -h --help             show this screen
