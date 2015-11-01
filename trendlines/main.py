@@ -13,6 +13,7 @@ Options:
 """
 import docopt
 import requests
+from bcolors import BColors
 
 wordlink_api = 'http://wordlink.com/search.php?'
 
@@ -41,7 +42,10 @@ def main():
             break
         else:
             title = hit['_source']['doc']['title'].encode('utf-8')
+            url = hit['_source']['doc']['url'].encode('utf-8')
             print ('{count}     {title}').format(count=count+1,title=title)
+            print BColors.OKBLUE+ '      {url}'.format(url=url) \
+                  + BColors.ENDC
 
 
 
